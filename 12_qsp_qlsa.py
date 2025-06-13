@@ -88,7 +88,7 @@ def CR_phi_d(phi, d, register_1, register_2):
 
 # Load QSP angles
 # These angles can be obtained from the QSPPACK package
-phi_angles = np.array( loadmat('phi_k_10_14.mat') ).item()['phi']
+phi_angles = np.array( loadmat('phi_kappa_80_pts_8000_deg_1999.mat') ).item()['phi_proc']
 
 phi_tilde_angles = np.zeros(np.shape(phi_angles))
 phase_angles = phi_angles.reshape(phi_angles.shape[0])
